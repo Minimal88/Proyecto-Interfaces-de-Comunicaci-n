@@ -1,0 +1,146 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{pgfplots} 
+\pgfplotsset{compat=newest} 
+\pgfplotsset{plot coordinates/math parser=false} 
+\newlength\figureheight 
+\newlength\figurewidth 
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+%\usepackage[english,activeacute]{babel}
+\usepackage[spanish,es-tabla]{babel}
+
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage[justification=centering]{caption}
+\usepackage[font=footnotesize]{caption}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{anysize}
+\marginsize{0.9cm}{0.9cm}{0.15cm}{0.01cm}
+\usepackage{enumitem}
+\usepackage{filecontents}            % loading package filecontents 
+\usepackage[numbers]{natbib}  
+\usepackage{listings}
+
+\usepackage{color}
+ 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
+
+% bibliography style
+ % better urls in bibliography
+\ifCLASSINFOpdf
+\else
+\fi
+
+\begin{document}
+
+\vspace{-4ex}
+\title{Aplicaciones de la tecnología LoRa}
+
+\renewcommand\IEEEkeywordsname{Palabras Clave}
+
+\author{\IEEEauthorblockN{Jason Kaleb Alfaro Badilla,\IEEEauthorrefmark{1} Esteban Martínez Valverde\IEEEauthorrefmark{2}, 
+Juan Carlos Cruz Naranjo\IEEEauthorrefmark{7}}
+\IEEEauthorblockA{Tecnológico de Costa Rica\\
+Maestría en Electrónica\\
+MP6104. Procesamiento Digital de Señales\\
+email: \IEEEauthorrefmark{1}kaleb.23415@gmail.com, \IEEEauthorrefmark{2}estemarval@gmail.com, \IEEEauthorrefmark{7}\\jckruz777@gmail.com}}
+
+
+\markboth{Alfaro, Martínez, Cruz, Proyecto II}%
+{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Journals}
+
+\begin{comment}
+This paper presents the design of an experimental method for audio compression based on linear prediction and multitasking. The method consists of the sub-band decomposition/composition, a variant of the starting algorithm called Linear Prediction Coding (LPC), since the original is not as effective in digital signal processing with high demand for complexity and bandwidth. This demand is present in applications that require computational capacity to process audio signals with complexity higher than speech. The analysis of the results in this work consists of an objective evaluation of the output audio by PEAQ of the ITU (BS.1387) as well as a subjective evaluation carried out by means of the ITU-R BS.1116-3 method.
+\end{comment}
+\IEEEtitleabstractindextext{
+\begin{abstract}
+En este artículo se presenta el estudio de un método de compresión de audio basado en Codificación de Predicción Lineal (LPC). Este método propone realizar una descomposición/composición de subbandas, y luego a cada subbanda codificar su información con LPC. Con el fin de obtener un uso más eficiente del espectro. 
+
+Esta demanda está presente en aplicaciones que requieren capacidad computacional para procesar señales de audio con una complejidad superior a la de la voz humana. El análisis de los resultados en este trabajo consiste en una evaluación objetiva del audio de salida mediante PEAQ de la UIT (BS.1387), así como una evaluación subjetiva realizada mediante el método ITU-R BS.1116-3.
+\end{abstract}
+\begin{IEEEkeywords}
+Predicción Lineal, Procesamiento Digital de Audio, Descomposición Sub-Banda, Composición Sub-Banda, Encodificador, Decodificador. 
+\end{IEEEkeywords}}
+
+% make the title area
+\maketitle
+\IEEEdisplaynontitleabstractindextext
+\IEEEpeerreviewmaketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\textbf{Introducción}}\label{intro}
+
+
+\section{Marco Teórico}
+
+
+\section{Diseño Propuesto}\label{diseno}
+
+
+
+\subsection{Encodificación}
+
+\subsubsection{Descomposición Subbanda}
+
+\subsubsection{LPC}
+
+\subsection{Decodificación}
+
+
+\subsubsection{Sintetizador}
+
+
+
+\section{\textbf{Análisis de Resultados}}\label{secRes}
+
+\subsection{Problemas Encontrados}
+
+
+\subsection{Compresión}
+
+
+\subsection{Banco de Pruebas}
+
+\subsection{Resultados para 2 y 4 Subbandas}
+
+\section{\textbf{Conclusiones y recomendaciones}}\label{secConclu}
+
+\begin{itemize}
+\item La estabilidad numérica de los polos o
+\item La compresión lograda en esta i
+\item Se recomienda que para el diseño de l
+\end{itemize}
+
+\renewcommand{\refname}{\textbf{Referencias}}
+\bibliographystyle{plain}
+\bibliography{Bibliography.bib}{}
+
+\clearpage
+\onecolumn
+\end{document}
